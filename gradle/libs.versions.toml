@@ -1,11 +1,23 @@
 [versions]
 androidGradlePlugin = "7.4.2"
 kotlin = "1.8.20"
+ksp = "1.8.20-1.0.10"
 coreKtx = "1.9.0"
 appcompat = "1.6.1"
 material = "1.8.0"
 constraintlayout = "2.1.4"
 navigation = "2.5.3"
+activity = "1.7.0"
+fragment = "1.5.6"
+glide = "4.15.1"
+lifecycle = "2.6.1"
+room = "2.5.1"
+moshi = "1.14.0"
+retrofit = "2.9.0"
+okhttp = "4.10.0"
+chucker = "3.5.2"
+coroutines = "1.6.4"
+koin = "3.4.0"
 junit = "4.13.2"
 androidxJunit = "1.1.5"
 espresso = "3.5.1"
@@ -17,6 +29,25 @@ material = { module = "com.google.android.material:material", version.ref = "mat
 constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
 navigation-fragment = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigation" }
 navigation-ui = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigation" }
+activity = { module = "androidx.activity:activity-ktx", version.ref = "activity" }
+fragment = { module = "ndroidx.fragment:fragment-ktx", version.ref = "fragment" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+glide-ksp = { module = "com.github.bumptech.glide:ksp", version.ref = "glide" }
+viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+room = { module = "androidx.room:room-ktx", version.ref = "room" }
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+moshi = { module = "com.squareup.moshi:moshi", version.ref = "moshi" }
+moshi-codegen = { module = "com.squareup.moshi:moshi-kotlin-codegen", version.ref = "moshi" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+retrofit-converter-moshi = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "retrofit" }
+retrofit-converter-scalars = { module = "com.squareup.retrofit2:converter-scalars", version.ref = "retrofit" }
+okhttp-bom = { module = "com.squareup.okhttp3:okhttp-bom", version.ref = "okhttp" }
+okhttp = { module = "com.squareup.okhttp3:okhttp" }
+okhttp-logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor" }
+chucker-library = { module = "com.github.chuckerteam.chucker:library", version.ref = "chucker" }
+chucker-stub = { module = "com.github.chuckerteam.chucker:library-no-op", version.ref = "chucker" }
+coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
 junit = { module = "junit:junit", version.ref = "junit" }
 androidx-junit = { module = "androidx.test.ext:junit", version.ref = "androidxJunit" }
 espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso" }
@@ -25,3 +56,6 @@ espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref =
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
 android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+navigation-safeargs = { id = "androidx.navigation.safeargs", version.ref = "navigation" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }

@@ -2,6 +2,9 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id(libs.plugins.kotlin.parcelize.get().pluginId) // Known limitation: https://github.com/gradle/gradle/issues/20084#issuecomment-1060822638
+    alias(libs.plugins.navigation.safeargs)
+    alias(libs.plugins.ksp)
 }
 
 android {
@@ -36,6 +39,7 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        dataBinding = true
     }
     packagingOptions {
         resources {
@@ -46,12 +50,51 @@ android {
 
 dependencies {
 
+    // Core
     implementation(libs.core.ktx)
     implementation(libs.appcompat)
+    implementation(libs.activity)
+    implementation(libs.fragment)
+
+    // UI
     implementation(libs.material)
     implementation(libs.constraintlayout)
+
+    // Glide
+    implementation(libs.glide)
+    ksp(libs.glide.ksp)
+
+    // Lifecycle
+    implementation(libs.viewmodel)
+
+    // Navigation
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
+
+    // Room
+    implementation(libs.room)
+    ksp(libs.room.compiler)
+
+    // Retrofit & Moshi
+    implementation(libs.moshi)
+    ksp(libs.moshi.codegen)
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.converter.moshi)
+    implementation(libs.retrofit.converter.scalars)
+    implementation(platform(libs.okhttp.bom))
+    implementation(libs.okhttp)
+    implementation(libs.okhttp.logging.interceptor)
+
+    // Chucker
+    debugImplementation(libs.chucker.library)
+    debugImplementation(libs.chucker.stub)
+
+    // Coroutines
+    implementation(libs.coroutines.android)
+
+    // Koin DI
+    implementation(libs.koin.android)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.espresso.core)

@@ -5,6 +5,8 @@ plugins {
     alias(libs.plugins.android.application) apply false
     alias(libs.plugins.android.library) apply false
     alias(libs.plugins.kotlin.android) apply false
+    alias(libs.plugins.navigation.safeargs) apply false
+    alias(libs.plugins.ksp) apply false
 }
 
 run {} // This is a workaround for https://youtrack.jetbrains.com/issue/KTIJ-19369
