@@ -87,7 +87,7 @@ dependencies {
 
     // Chucker
     debugImplementation(libs.chucker.library)
-    debugImplementation(libs.chucker.stub)
+    releaseImplementation(libs.chucker.stub)
 
     // Coroutines
     implementation(libs.coroutines.android)
