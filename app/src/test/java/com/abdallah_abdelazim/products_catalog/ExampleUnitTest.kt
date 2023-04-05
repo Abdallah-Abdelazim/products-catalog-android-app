@@ -1,4 +1,4 @@
-package com.example.testapp
+package com.abdallah_abdelazim.products_catalog
 
 import org.junit.Test
 
