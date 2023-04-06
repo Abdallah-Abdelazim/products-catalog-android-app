@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.abdallah_abdelazim.product_catalog.data"
+    namespace = "com.abdallah_abdelazim.products_catalog.shared"
     compileSdk = 33
 
     defaultConfig {
@@ -36,24 +36,20 @@ android {
 
 dependencies {
 
-    implementation(project(":shared"))
+    // Core
+    api(libs.core.ktx)
+    api(libs.appcompat)
+    api(libs.activity)
+    api(libs.fragment)
 
-    // Room
-    implementation(libs.room)
-    ksp(libs.room.compiler)
+    // Coroutines
+    api(libs.coroutines.android)
 
-    // Retrofit & Moshi
-    implementation(libs.moshi)
-    ksp(libs.moshi.codegen)
-    implementation(libs.retrofit)
-    implementation(libs.retrofit.converter.moshi)
-    implementation(libs.retrofit.converter.scalars)
-    implementation(platform(libs.okhttp.bom))
-    implementation(libs.okhttp)
-    implementation(libs.okhttp.logging.interceptor)
+    // Koin DI
+    api(libs.koin.android)
 
-    // Chucker
-    debugImplementation(libs.chucker.library)
-    releaseImplementation(libs.chucker.stub)
-
+    // Testing
+    testApi(libs.junit)
+    androidTestApi(libs.androidx.junit)
+    androidTestApi(libs.espresso.core)
 }

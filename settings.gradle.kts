@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 rootProject.name = "Products Catalog"
 include(":app")
 include(":data")
+include(":shared")

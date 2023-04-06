@@ -52,12 +52,6 @@ dependencies {
 
     implementation(project(":data"))
 
-    // Core
-    implementation(libs.core.ktx)
-    implementation(libs.appcompat)
-    implementation(libs.activity)
-    implementation(libs.fragment)
-
     // UI
     implementation(libs.material)
     implementation(libs.constraintlayout)
@@ -72,16 +66,5 @@ dependencies {
     // Navigation
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
-
-    // Coroutines
-    implementation(libs.coroutines.android)
-
-    // Koin DI
-    implementation(libs.koin.android)
-
-    // Testing
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.espresso.core)
 
 }
