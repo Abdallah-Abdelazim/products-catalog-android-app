@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.abdallah_abdelazim.product_catalog.data"
+    namespace = "com.abdallah_abdelazim.products_catalog.data"
     compileSdk = 33
 
     defaultConfig {
@@ -36,7 +36,7 @@ android {
 
 dependencies {
 
-    implementation(project(":shared"))
+    api(project(":shared"))
 
     // Room
     implementation(libs.room)
@@ -55,5 +55,10 @@ dependencies {
     // Chucker
     debugImplementation(libs.chucker.library)
     releaseImplementation(libs.chucker.stub)
+
+    // Testing
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.espresso.core)
 
 }

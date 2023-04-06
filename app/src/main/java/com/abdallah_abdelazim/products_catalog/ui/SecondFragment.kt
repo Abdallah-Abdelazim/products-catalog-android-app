@@ -6,8 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.abdallah_abdelazim.product_catalog.R
-import com.abdallah_abdelazim.product_catalog.databinding.FragmentSecondBinding
+import com.abdallah_abdelazim.products_catalog.R
+import com.abdallah_abdelazim.products_catalog.databinding.FragmentSecondBinding
 
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.

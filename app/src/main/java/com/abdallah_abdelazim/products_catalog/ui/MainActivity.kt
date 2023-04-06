@@ -9,8 +9,8 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
-import com.abdallah_abdelazim.product_catalog.R
-import com.abdallah_abdelazim.product_catalog.databinding.ActivityMainBinding
+import com.abdallah_abdelazim.products_catalog.R
+import com.abdallah_abdelazim.products_catalog.databinding.ActivityMainBinding
 import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {

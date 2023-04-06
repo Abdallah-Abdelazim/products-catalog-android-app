@@ -1,10 +1,10 @@
-package com.abdallah_abdelazim.product_catalog.data.repository.product
+package com.abdallah_abdelazim.products_catalog.data.repository.product
 
-import com.abdallah_abdelazim.product_catalog.data.remote.Resource
-import com.abdallah_abdelazim.product_catalog.data.remote.api.ProductApi
-import com.abdallah_abdelazim.product_catalog.data.remote.dto.Product
-import com.abdallah_abdelazim.product_catalog.data.remote.exception.NoInternetConnectionException
-import com.abdallah_abdelazim.product_catalog.data.remote.exception.UnsuccessfulNetworkResponseException
+import com.abdallah_abdelazim.products_catalog.data.remote.Resource
+import com.abdallah_abdelazim.products_catalog.data.remote.api.ProductApi
+import com.abdallah_abdelazim.products_catalog.data.remote.dto.Product
+import com.abdallah_abdelazim.products_catalog.data.remote.exception.NoInternetConnectionException
+import com.abdallah_abdelazim.products_catalog.data.remote.exception.UnsuccessfulNetworkResponseException
 import com.abdallah_abdelazim.products_catalog.shared.utils.NetworkHelper
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow

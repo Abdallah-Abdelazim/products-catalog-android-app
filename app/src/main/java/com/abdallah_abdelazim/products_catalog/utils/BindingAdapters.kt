@@ -4,7 +4,7 @@ import android.graphics.drawable.ColorDrawable
 import android.widget.ImageView
 import androidx.core.content.ContextCompat
 import androidx.databinding.BindingAdapter
-import com.abdallah_abdelazim.product_catalog.R
+import com.abdallah_abdelazim.products_catalog.R
 import com.bumptech.glide.Glide
 
 @BindingAdapter("imageUrl")

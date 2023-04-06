@@ -1,4 +1,4 @@
-package com.abdallah_abdelazim.product_catalog.data.remote.exception
+package com.abdallah_abdelazim.products_catalog.data.remote.exception
 
 class UnsuccessfulNetworkResponseException(
     val responseCode: Int,

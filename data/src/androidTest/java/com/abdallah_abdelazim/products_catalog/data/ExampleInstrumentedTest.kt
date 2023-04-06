@@ -1,4 +1,4 @@
-package com.abdallah_abdelazim.product_catalog.data
+package com.abdallah_abdelazim.products_catalog.data
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

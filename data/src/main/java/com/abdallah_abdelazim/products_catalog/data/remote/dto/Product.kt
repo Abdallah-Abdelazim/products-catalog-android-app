@@ -1,4 +1,4 @@
-package com.abdallah_abdelazim.product_catalog.data.remote.dto
+package com.abdallah_abdelazim.products_catalog.data.remote.dto
 
 import com.squareup.moshi.JsonClass
 

@@ -1,6 +1,6 @@
-package com.abdallah_abdelazim.product_catalog.data.remote.api
+package com.abdallah_abdelazim.products_catalog.data.remote.api
 
-import com.abdallah_abdelazim.product_catalog.data.remote.dto.Product
+import com.abdallah_abdelazim.products_catalog.data.remote.dto.Product
 import retrofit2.Response
 import retrofit2.http.GET
 

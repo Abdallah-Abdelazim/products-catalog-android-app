@@ -9,11 +9,11 @@ plugins {
 }
 
 android {
-    namespace = "com.abdallah_abdelazim.product_catalog"
+    namespace = "com.abdallah_abdelazim.products_catalog"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.testapp"
+        applicationId = "com.abdallah_abdelazim.products_catalog"
         minSdk = 21
         targetSdk = 33
         versionCode = 1
@@ -68,5 +68,10 @@ dependencies {
     // Navigation
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
+
+    // Testing
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.espresso.core)
 
 }

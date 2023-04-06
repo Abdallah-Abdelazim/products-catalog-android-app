@@ -1,10 +1,10 @@
-package com.abdallah_abdelazim.product_catalog.data.di
+package com.abdallah_abdelazim.products_catalog.data.di
 
 import android.content.Context
-import com.abdallah_abdelazim.product_catalog.data.BASE_URL
-import com.abdallah_abdelazim.product_catalog.data.remote.api.ProductApi
-import com.abdallah_abdelazim.product_catalog.data.repository.product.ProductRepository
-import com.abdallah_abdelazim.product_catalog.data.repository.product.ProductRepositoryImpl
+import com.abdallah_abdelazim.products_catalog.data.BASE_URL
+import com.abdallah_abdelazim.products_catalog.data.remote.api.ProductApi
+import com.abdallah_abdelazim.products_catalog.data.repository.product.ProductRepository
+import com.abdallah_abdelazim.products_catalog.data.repository.product.ProductRepositoryImpl
 import com.chuckerteam.chucker.api.ChuckerInterceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
