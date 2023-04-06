@@ -7,8 +7,7 @@ import androidx.databinding.BindingAdapter
 import com.abdallah_abdelazim.product_catalog.R
 import com.bumptech.glide.Glide
 
-
-@BindingAdapter("app:image")
+@BindingAdapter("imageUrl")
 fun loadImage(view: ImageView, url: String?) {
     val color = ColorDrawable(ContextCompat.getColor(view.context, R.color.light_grey))
     Glide.with(view.context)
