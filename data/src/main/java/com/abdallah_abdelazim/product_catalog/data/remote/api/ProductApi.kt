@@ -4,7 +4,7 @@ import com.abdallah_abdelazim.product_catalog.data.remote.dto.Product
 import retrofit2.Response
 import retrofit2.http.GET
 
-interface ProductApi {
+internal interface ProductApi {
 
     @GET("/products")
     suspend fun getProducts(): Response<List<Product>>

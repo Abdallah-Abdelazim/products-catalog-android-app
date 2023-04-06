@@ -11,7 +11,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
 
-class ProductRepositoryImpl(
+internal class ProductRepositoryImpl(
     private val productApi: ProductApi,
     private val networkHelper: NetworkHelper
 ) : ProductRepository {
