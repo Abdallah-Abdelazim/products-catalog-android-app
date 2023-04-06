@@ -3,26 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/ProductsListFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.abdallah_abdelazim.products_catalog.ui.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        android:id="@+id/ProductsListFragment"
+        android:name="com.abdallah_abdelazim.products_catalog.ui.products_list.ProductsListFragment"
+        android:label="@string/products_list_fragment_label"
+        tools:layout="@layout/fragment_products_list">
 
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/action_ProductsListFragment_to_ProductDetailsFragment"
+            app:destination="@id/ProductDetailsFragment" />
     </fragment>
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.abdallah_abdelazim.products_catalog.ui.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        android:id="@+id/ProductDetailsFragment"
+        android:name="com.abdallah_abdelazim.products_catalog.ui.products_details.ProductDetailsFragment"
+        android:label="@string/product_details_fragment_label"
+        tools:layout="@layout/fragment_product_details">
 
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            android:id="@+id/action_ProductDetailsFragment_to_ProductsListFragment"
+            app:destination="@id/ProductsListFragment" />
     </fragment>
 </navigation>

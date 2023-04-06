@@ -1,10 +1,9 @@
 <resources>
     <string name="app_name">Products Catalog</string>
 
-    <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
+    <string name="products_list_fragment_label">Products</string>
+    <string name="product_details_fragment_label">Product Details</string>
+
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
