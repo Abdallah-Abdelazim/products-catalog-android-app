@@ -1,6 +1,6 @@
 package com.abdallah_abdelazim.products_catalog.data.repository.product
 
-import com.abdallah_abdelazim.products_catalog.data.remote.Resource
+import com.abdallah_abdelazim.products_catalog.data.Resource
 import com.abdallah_abdelazim.products_catalog.data.remote.dto.Product
 import kotlinx.coroutines.flow.Flow
 

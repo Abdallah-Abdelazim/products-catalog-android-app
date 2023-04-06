@@ -1,4 +1,4 @@
-package com.abdallah_abdelazim.products_catalog.data.remote
+package com.abdallah_abdelazim.products_catalog.data
 
 sealed class Resource<out T : Any> {
 
