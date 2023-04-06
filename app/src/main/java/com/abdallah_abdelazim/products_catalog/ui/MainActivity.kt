@@ -1,17 +1,17 @@
-package com.abdallah_abdelazim.products_catalog
+package com.abdallah_abdelazim.products_catalog.ui
 
 import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
+import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
-import android.view.Menu
-import android.view.MenuItem
-import com.example.testapp.R
-import com.example.testapp.databinding.ActivityMainBinding
+import com.abdallah_abdelazim.product_catalog.R
+import com.abdallah_abdelazim.product_catalog.databinding.ActivityMainBinding
+import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
 

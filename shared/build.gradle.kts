@@ -48,6 +48,9 @@ dependencies {
     // Koin DI
     api(libs.koin.android)
 
+    // Misc.
+    api(libs.utilcodex)
+
     // Testing
     testApi(libs.junit)
     androidTestApi(libs.androidx.junit)

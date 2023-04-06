@@ -18,6 +18,7 @@ okhttp = "4.10.0"
 chucker = "3.5.2"
 coroutines = "1.6.4"
 koin = "3.4.0"
+utilcodex = "1.31.1"
 junit = "4.13.2"
 androidxJunit = "1.1.5"
 espresso = "3.5.1"
@@ -48,6 +49,7 @@ chucker-library = { module = "com.github.chuckerteam.chucker:library", version.r
 chucker-stub = { module = "com.github.chuckerteam.chucker:library-no-op", version.ref = "chucker" }
 coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
 koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
+utilcodex = { module = "com.blankj:utilcodex", version.ref = "utilcodex" }
 junit = { module = "junit:junit", version.ref = "junit" }
 androidx-junit = { module = "androidx.test.ext:junit", version.ref = "androidxJunit" }
 espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso" }
@@ -57,5 +59,6 @@ android-application = { id = "com.android.application", version.ref = "androidGr
 android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 navigation-safeargs = { id = "androidx.navigation.safeargs", version.ref = "navigation" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }

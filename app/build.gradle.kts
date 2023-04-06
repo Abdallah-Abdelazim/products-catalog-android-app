@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     id(libs.plugins.kotlin.parcelize.get().pluginId) // Known limitation: https://github.com/gradle/gradle/issues/20084#issuecomment-1060822638
     alias(libs.plugins.navigation.safeargs)
+    alias(libs.plugins.kotlin.kapt)
     alias(libs.plugins.ksp)
 }
 
@@ -51,6 +52,7 @@ android {
 dependencies {
 
     implementation(project(":data"))
+    implementation(project(":shared"))
 
     // UI
     implementation(libs.material)
