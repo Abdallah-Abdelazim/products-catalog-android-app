@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">Test App</string>
+    <string name="app_name">Products Catalog</string>
+
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
