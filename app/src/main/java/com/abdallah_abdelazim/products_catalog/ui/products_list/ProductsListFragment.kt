@@ -60,7 +60,6 @@ class ProductsListFragment : Fragment() {
                     renderUiState(uiState)
                 }
         }
-
     }
 
     private fun onProductClicked(product: ProductUiModel) {

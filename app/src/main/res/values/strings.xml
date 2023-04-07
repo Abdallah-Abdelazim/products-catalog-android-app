@@ -4,6 +4,8 @@
     <string name="products_list_fragment_label">Products</string>
     <string name="product_details_fragment_label">Product Details</string>
 
+    <string name="price">Price: %f</string>
+
     <string name="msg_no_internet">No internet connection.</string>
     <string name="msg_error_general">Something went wrong! Try again later.</string>
     <string name="msg_no_products">No products found.</string>

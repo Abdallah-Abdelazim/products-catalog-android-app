@@ -15,88 +15,56 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginVertical="4dp"
-        app:contentPadding="8dp">
+        app:contentPadding="8dp"
+        app:rippleColor="@color/ripple_color">
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:id="@+id/iv_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:scaleType="centerCrop"
                 app:imageUrl="@{ product.imageUrl }"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 tools:src="@tools:sample/backgrounds/scenic" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:orientation="vertical">
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="8dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@{product.title}"
+                android:textAppearance="?attr/textAppearanceTitleLarge"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv_image"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Name" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="8dp"
+                android:layout_weight="1"
+                android:text="@{ @string/price(product.price) }"
+                android:textAlignment="viewEnd"
+                android:textAppearance="?attr/textAppearanceBody2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv_image"
+                app:layout_constraintTop_toBottomOf="@id/tv_title"
+                tools:text="12 EGP" />
 
-                    <com.google.android.material.textview.MaterialTextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ellipsize="end"
-                        android:maxLines="1"
-                        android:text="@{product.title}"
-                        android:textAppearance="?android:textAppearanceMedium"
-                        tools:text="Name" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-                    <com.google.android.material.textview.MaterialTextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
-                        android:text="@{product.title}"
-                        tools:text="21.12.2022" />
-
-                </LinearLayout>
-
-
-                <com.google.android.material.textview.MaterialTextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ellipsize="end"
-                    android:lines="2"
-                    android:maxLines="2"
-                    android:text="@{product.description}"
-                    tools:text="@tools:sample/lorem/random" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <com.google.android.material.textview.MaterialTextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Price" />
-
-                    <com.google.android.material.textview.MaterialTextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@{ String.valueOf(product.price) }"
-                        tools:text="12 EUR" />
-
-                    <androidx.appcompat.widget.AppCompatRatingBar
-                        android:id="@+id/rating_bar"
-                        style="@style/Widget.AppCompat.RatingBar.Small"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:rating="@{ (float) product.rating }"
-                        tools:rating="2.5" />
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-        </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 </layout>
