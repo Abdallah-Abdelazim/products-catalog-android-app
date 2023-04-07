@@ -4,27 +4,40 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
+import com.abdallah_abdelazim.products_catalog.R
 import com.abdallah_abdelazim.products_catalog.databinding.FragmentProductDetailsBinding
+import com.abdallah_abdelazim.products_catalog.ui.products_list.ProductUiModel
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
  */
 class ProductDetailsFragment : Fragment() {
 
-    private var _binding: FragmentProductDetailsBinding? = null
+    private val viewModel: ProductDetailsViewModel by viewModel()
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
+    private var _binding: FragmentProductDetailsBinding? = null
     private val binding get() = _binding!!
+
+    private lateinit var product: ProductUiModel
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        val args: ProductDetailsFragmentArgs =
+            ProductDetailsFragmentArgs.fromBundle(requireArguments())
+        product = args.product
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
-        _binding = FragmentProductDetailsBinding.inflate(inflater, container, false)
+        _binding = DataBindingUtil.inflate(
+            inflater, R.layout.fragment_product_details, container, false
+        )
         return binding.root
 
     }
@@ -32,11 +45,7 @@ class ProductDetailsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.buttonSecond.setOnClickListener {
-            findNavController().navigate(
-                ProductDetailsFragmentDirections.actionProductDetailsFragmentToProductsListFragment()
-            )
-        }
+        binding.product = product
     }
 
     override fun onDestroyView() {

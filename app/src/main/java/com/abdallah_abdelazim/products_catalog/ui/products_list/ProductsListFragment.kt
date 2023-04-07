@@ -47,7 +47,7 @@ class ProductsListFragment : Fragment() {
     }
 
     private fun setupProductsRv() {
-        productsAdapter = ProductsAdapter(::onProductClicked)
+        productsAdapter = ProductsAdapter(::onProductItemClicked)
         binding.rvProducts.setHasFixedSize(true)
         binding.rvProducts.adapter = productsAdapter
     }
@@ -62,15 +62,17 @@ class ProductsListFragment : Fragment() {
         }
     }
 
-    private fun onProductClicked(product: ProductUiModel) {
-        findNavController().navigate(
-            ProductsListFragmentDirections.actionProductsListFragmentToProductDetailsFragment()
-        )
-    }
-
     private fun renderUiState(uiState: ProductsListUiState) {
         binding.uiState = uiState
         productsAdapter.submitList(uiState.products)
+    }
+
+    private fun onProductItemClicked(product: ProductUiModel) {
+        findNavController().navigate(
+            ProductsListFragmentDirections.actionProductsListFragmentToProductDetailsFragment(
+                product
+            )
+        )
     }
 
     override fun onDestroyView() {

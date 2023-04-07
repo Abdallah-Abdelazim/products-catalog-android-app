@@ -13,13 +13,21 @@
 
         <action
             android:id="@+id/action_ProductsListFragment_to_ProductDetailsFragment"
-            app:destination="@id/ProductDetailsFragment" />
+            app:destination="@id/ProductDetailsFragment">
+            <argument
+                android:name="product"
+                app:argType="com.abdallah_abdelazim.products_catalog.ui.products_list.ProductUiModel" />
+        </action>
     </fragment>
     <fragment
         android:id="@+id/ProductDetailsFragment"
         android:name="com.abdallah_abdelazim.products_catalog.ui.product_details.ProductDetailsFragment"
         android:label="@string/product_details_fragment_label"
         tools:layout="@layout/fragment_product_details">
+
+        <argument
+            android:name="product"
+            app:argType="com.abdallah_abdelazim.products_catalog.ui.products_list.ProductUiModel" />
 
         <action
             android:id="@+id/action_ProductDetailsFragment_to_ProductsListFragment"

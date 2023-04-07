@@ -4,6 +4,4 @@ import androidx.lifecycle.ViewModel
 
 class ProductDetailsViewModel : ViewModel() {
 
-
-
 }
