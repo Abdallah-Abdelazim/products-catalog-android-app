@@ -1,7 +1,7 @@
 package com.abdallah_abdelazim.products_catalog.data.repository.product
 
 import com.abdallah_abdelazim.products_catalog.data.remote.api.ProductApi
-import com.abdallah_abdelazim.products_catalog.data.remote.dto.Product
+import com.abdallah_abdelazim.products_catalog.data.remote.dto.ProductDto
 import com.abdallah_abdelazim.products_catalog.data.remote.exception.NoInternetConnectionException
 import com.abdallah_abdelazim.products_catalog.data.remote.exception.UnsuccessfulNetworkResponseException
 import com.abdallah_abdelazim.products_catalog.shared.utils.NetworkHelper
@@ -15,7 +15,7 @@ internal class ProductRemoteDataSourceImpl(
         NoInternetConnectionException::class,
         UnsuccessfulNetworkResponseException::class
     )
-    override suspend fun getProducts(): List<Product> {
+    override suspend fun getProducts(): List<ProductDto> {
 
         if (networkHelper.isConnected().not()) throw NoInternetConnectionException()
 

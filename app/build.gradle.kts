@@ -52,11 +52,12 @@ android {
 dependencies {
 
     implementation(project(":data"))
-    implementation(project(":shared"))
 
     // UI
     implementation(libs.material)
     implementation(libs.constraintlayout)
+    implementation(libs.recyclerview)
+    implementation(libs.cardview)
 
     // Glide
     implementation(libs.glide)

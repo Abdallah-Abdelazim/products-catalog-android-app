@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.abdallah_abdelazim.products_catalog.ui.products_details.ProductDetailsFragment">
+    tools:context="com.abdallah_abdelazim.products_catalog.ui.product_details.ProductDetailsFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

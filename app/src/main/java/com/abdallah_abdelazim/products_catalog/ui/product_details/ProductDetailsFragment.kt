@@ -1,4 +1,4 @@
-package com.abdallah_abdelazim.products_catalog.ui.products_details
+package com.abdallah_abdelazim.products_catalog.ui.product_details
 
 import android.os.Bundle
 import android.view.LayoutInflater
