@@ -6,6 +6,7 @@ E-commerce demo Android app using the [fakestoreapi.com](https://fakestoreapi.co
 * Kotlin
 * MVVM.
 * Clean Architecture.
+* Modularization.
 * Jetpack Navigation Component.
 * Data binding.
 * Coroutines.
