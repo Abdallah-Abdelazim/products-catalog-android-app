@@ -16,13 +16,12 @@ import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.junit.runners.JUnit4
 import org.mockito.Mock
 import org.mockito.Mockito
-import org.mockito.MockitoAnnotations
+import org.mockito.junit.MockitoJUnitRunner
 import retrofit2.Response
 
-@RunWith(JUnit4::class)
+@RunWith(MockitoJUnitRunner::class)
 class ProductRepositoryUnitTest {
 
     private lateinit var productRepository: ProductRepository
@@ -38,7 +37,6 @@ class ProductRepositoryUnitTest {
 
     @Before
     fun setup() {
-        MockitoAnnotations.initMocks(this)
         productRemoteDataSource = ProductRemoteDataSourceImpl(productApi, networkHelper)
         productRepository = ProductRepositoryImpl(productRemoteDataSource)
     }
