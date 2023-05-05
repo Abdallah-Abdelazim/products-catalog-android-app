@@ -2,7 +2,7 @@
 androidGradlePlugin = "8.0.1"
 kotlin = "1.8.20"
 ksp = "1.8.20-1.0.11"
-coreKtx = "1.9.0"
+coreKtx = "1.10.0"
 appcompat = "1.6.1"
 material = "1.8.0"
 constraintlayout = "2.1.4"
