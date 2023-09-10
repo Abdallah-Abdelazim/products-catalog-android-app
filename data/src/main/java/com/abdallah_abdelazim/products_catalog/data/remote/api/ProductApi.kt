@@ -6,7 +6,7 @@ import retrofit2.http.GET
 
 internal interface ProductApi {
 
-    @GET("/products")
+    @GET("products.json")
     suspend fun getProducts(): Response<List<ProductDto>>
 
 }
