@@ -10,7 +10,7 @@ plugins {
 
 android {
     namespace = "com.abdallah_abdelazim.products_catalog"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.abdallah_abdelazim.products_catalog"
