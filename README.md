@@ -1,8 +1,8 @@
 # Products Catalog
 
-E-commerce demo Android app using the [fakestoreapi.com](https://fakestoreapi.com/) APIs.
+E-commerce demo Android app.
 
-## Used: 
+## In this app I used: 
 * Kotlin
 * MVVM.
 * Clean Architecture.
